@@ -1,0 +1,124 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+   background-color: #d3d3d3;
+     
+}
+
+
+.container{
+  width: 85%;
+  height: 91vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 22px;
+  box-shadow: 0px 10px 5px grey; 
+  padding: 15px;
+  margin: 10px
+  
+  
+}
+
+
+.display{
+  text-align: right;
+  color: white;
+ background-color: #333;
+  font-size: 50px;
+  width: 100%;
+  margin-bottom: 64px;
+  position: relative;
+  bottom: 30px;
+  border-radius: 22px;
+}
+
+.btns{
+     width: 100%;
+}
+.btns button {
+     background-color:#333;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.top{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-column-gap: 12px;
+}
+.middle{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 12px;
+  margin-top: 12px;
+}
+
+.bottom{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 12px;
+  margin-top: 12px;
+}
+.last{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 12px;
+  margin-top: 12px;
+}
+
+.dobll:hover,
+.less:hover,
+.equa:hover,
+.pls:hover,
+.c:hover {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+
+@media   (min-width: 220px){
+     .container{
+          width: 88%;
+     }
+     .btns button{
+          padding: 20px;
+          font-size: 14px;
+     }
+     .btns{
+      width: 100%;
+     }
+    
+}
+
+@media (max-width: 360px) and (min-width: 220px){
+     .container{
+          width: 95%;
+     }
+     .btns button{
+          padding: 15px;
+          font-size: 12px;
+     }
+     .btns{
+      width: 100%;
+     }
+       .top{
+  display: grid;
+  grid-template-columns: repeat(5,16.4%);
+  grid-column-gap: 12px;
+    
+}
+  }
+
+
